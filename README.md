@@ -19,10 +19,15 @@ A compact, realistic dataset and set of SQL queries that demonstrate customer su
 ### Alternative load (pgAdmin GUI)
 - Right‑click each table → **Import/Export** → Import from the corresponding CSV (Header = Yes, Format = CSV).
 
-## Highlight on Resume
-- Built a **Customer Tickets Dashboard** in PostgreSQL: modeled support workflows, imported CSVs, and wrote analytic SQL to track SLA compliance, backlog, agent productivity, and churn‑risk signals.
-- Tech: PostgreSQL, SQL (CTEs, aggregates, joins), pgAdmin.
+## Tech
+- PostgreSQL, SQL (CTEs, aggregates, joins), pgAdmin.
 
----
+## Average Resolution Time by Agent
 
-> Tip: add a short Loom/GIF demo scrolling through query results for extra polish.
+The query in  `analytics/avg_resolution_by_agent.sql` calculates the mean time (hours) each agent takes to resolve tickets.
+
+You can export the result grid as CSV in pgAdmin and render it with the provided Python helper:
+
+```bash
+python viz_avg_resolution_by_agent.py avg_resolution_by_agent.csv
+
