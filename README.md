@@ -31,3 +31,5 @@ You can export the result grid as CSV in pgAdmin and render it with the provided
 ```bash
 python viz_avg_resolution_by_agent.py avg_resolution_by_agent.csv
 
+![Average Resolution Time by Agent](avg_resolution_by_agent.png)
+
